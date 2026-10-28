@@ -1,57 +1,66 @@
 # Zepto SQL Data Analysis Project
 
-## Project Overview
+## 📌 About the Project
 
-This project focuses on analyzing Zepto product data using **MySQL**. The goal is to explore product pricing, discounts, inventory, product availability, categories, and estimated revenue to answer practical business questions using SQL.
+In this project, I used MySQL to explore Zepto product data and understand how different products are priced, discounted, and managed in inventory.
 
-The project covers the complete SQL analysis workflow, from creating the database and table to data exploration, data cleaning, and business analysis.
+I worked on cleaning the data, exploring product categories, checking stock availability, and answering business questions related to pricing, discounts, and inventory. The main goal was to improve my SQL skills and learn how to use data to answer real-world business questions.
 
-## What I Worked On
+## 🛠️ Tools Used
 
-* Created a MySQL database and product table
-* Explored the dataset and checked the number of records
-* Identified null values and duplicate product names
-* Analyzed product categories and stock availability
-* Cleaned invalid price records
-* Converted price values from paise to rupees
-* Analyzed product discounts and pricing
-* Estimated revenue by category
-* Analyzed inventory weight
-* Identified products offering better value for money
-* Used `CASE` statements to create product weight categories
-* Used CTEs and `ROW_NUMBER()` to rank products within each category
+* MySQL
+* MySQL Workbench
+* SQL
 
-## SQL Concepts Used
+## 🔍 What I Worked On
 
-* `SELECT`, `WHERE`, `DISTINCT`
-* `GROUP BY` and `HAVING`
-* Aggregate functions: `COUNT()`, `SUM()`, `AVG()`
-* `ORDER BY` and `LIMIT`
-* `CASE WHEN`
-* Data cleaning using `DELETE` and `UPDATE`
+* Created a database and table to store the product data.
+* Explored the dataset and checked for missing values and repeated product names.
+* Cleaned records with invalid prices.
+* Converted product prices from paise to rupees.
+* Analyzed product prices, discounts, and stock availability.
+* Calculated estimated inventory value for different product categories.
+* Compared average discounts across categories.
+* Checked product weight and price to identify value-for-money options.
+* Used `CASE WHEN` to group products by weight.
+* Used CTEs and window functions to rank products within each category.
+
+## 💻 SQL Concepts Used
+
+During this project, I practiced:
+
+* Filtering and sorting data using `WHERE` and `ORDER BY`
+* Grouping data using `GROUP BY` and `HAVING`
+* Aggregate functions such as `COUNT()`, `SUM()`, and `AVG()`
+* Removing duplicates from query results using `DISTINCT`
+* Conditional logic using `CASE WHEN`
+* Updating and deleting records for data cleaning
 * Common Table Expressions (CTEs)
-* Window functions
-* `ROW_NUMBER()`
-* Conditional filtering
-* Business-oriented data analysis
+* Window functions using `ROW_NUMBER()`
 
-## Business Questions Answered
+## 🎯 Project Objective
 
-1. What are the top 10 best-value products based on discount percentage?
-2. Which high-priced products are currently out of stock?
-3. What is the estimated revenue for each category?
-4. Which products have a price above ₹500 but a discount below 10%?
-5. Which categories offer the highest average discount?
+The aim of this project was to get hands-on experience with SQL and understand how product data can help answer business questions about pricing, discounts, and inventory management.
+
+## 📋 Business Questions I Explored
+
+1. Which products have the highest discount percentages?
+2. Which high-priced products are out of stock?
+3. What is the estimated inventory value of each category?
+4. Which products have an MRP above ₹500 and a discount below 10%?
+5. Which categories offer the highest average discounts?
 6. How can products be grouped into Low, Medium, and Bulk weight categories?
-7. What is the total inventory weight per category?
-8. Which products provide the best value for money based on price per 100g?
-9. What are the top 3 highest-discount products in each category?
-10. Which in-stock products have a discount of 40% or more?
+7. What is the total inventory weight for each category?
+8. Which products offer the lowest price per 100 grams?
+9. What are the top three highest-discount products in each category?
+10. Which in-stock products have discounts of 40% or more?
 
-## Tools Used
+## 📊 Key Business Insights
 
-**MySQL | SQL | MySQL Workbench**
+* **Product Availability:** 453 out of 3,732 product records (12.14%) are marked as out of stock.
+* **Highest Discount:** Dukes Waffy wafers have discounts of up to 51%.
+* **Category Discounts:** Fruits & Vegetables has the highest average discount at 15.46%.
+* **Estimated Inventory Value:** Cooking Essentials and Munchies have estimated inventory values of ₹3,37,369 each.
+* **Value for Money:** Garlic and mint leaves have a calculated price of ₹9 per 100 grams.
 
-## Project Objective
-
-The main objective of this project is to demonstrate how SQL can be used to transform raw e-commerce product data into meaningful business insights that can support pricing, inventory, discount, and product-level decisions.
+*Note: Inventory value is estimated using discounted selling prices and available quantities. It does not represent actual sales revenue.*
